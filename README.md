@@ -1,7 +1,4 @@
-sitApTecVesp2014
-================
-
-Situação de Aprendizagem da 4ª fase 2014, curso Técnico em Informática - vespertino
+Situação de Aprendizagem  4ª fase 2014 // curso Técnico em Informática - vespertino
 
 #CONTEXTUALIZAÇÃO
 
@@ -22,7 +19,5 @@ A equipe contratada pela Contêxtil Ltda deverá pesquisar esses novos padrões 
 * Portal hospedado em um servidor on-line. 
 * Código fonte disponibilizado no Github. 
 * Relatório de testes do Portal
- 
-:godmode:
 
 

@@ -1,27 +1,26 @@
 <?php
 
 if (!defined('BASEPATH'))
-    exit('Acesso direto ao script não é permitido');
+    exit('No direct script access allowed');
 
-class Usuarios_model extends CI_Model {
+class Pessoas_model extends CI_Model {
 
     function __construct() {
         parent::__construct();
     }
 
     function inserir($data) {
-        //Inserção na tabela usuario
         return $this->db->insert('usuario', $data);
+        
     }
 
     function listar() {
-        //Listagem da tabela usuário
         $query = $this->db->get('usuario');
         return $query->result();
     }
 
-    function editar($idusuario) {
-        $this->db->where('idusuario', $idusuario);
+    function editar($id) {
+        $this->db->where('idusuario', $id);
         $query = $this->db->get('usuario');
         return $query->result();
     }
@@ -32,12 +31,14 @@ class Usuarios_model extends CI_Model {
         return $this->db->update('usuario');
     }
 
-    function deletar($idusuario) {
-        $this->db->where('idusuario', $idusuario);
+    function deletar($id) {
+        $this->db->where('idusuario', $id);
         return $this->db->delete('usuario');
     }
 
 }
 
-/* End of file usuarios_model.php */
-/* Location: ./application/models/usuarios_model.php */
+/* 
+ * Código retirado de : "http://phpdojo.com.br/php/crud-completo-com-codeigniter-parte-iv/"
+ */
+

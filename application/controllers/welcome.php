@@ -21,14 +21,16 @@ class Welcome extends CI_Controller {
      * @see http://codeigniter.com/user_guide/general/urls.html
      */
     public function index() {
-        $this->load->view('home');
+        $this->load->view('home_Header');
+        $this->load->view('home_Content');
+        $this->load->view('home_Sidebar');
     }
 
     public function info() {
         phpinfo();
         exit();
     }
-
+                
 }
 
 /* End of file welcome.php */

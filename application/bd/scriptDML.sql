@@ -59,5 +59,3 @@ START TRANSACTION;
 USE `sitap`;
 INSERT INTO `sitap`.`categoria_has_artigo` (`idcategoria`, `idartigo`) VALUES (1, 1);
 INSERT INTO `sitap`.`categoria_has_artigo` (`idcategoria`, `idartigo`) VALUES (2, 2);
-
-COMMIT;
